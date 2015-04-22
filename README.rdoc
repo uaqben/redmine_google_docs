@@ -10,8 +10,9 @@ http://evolvingweb.ca/story/introducing-redmine-google-docs-plugin
 1. Extract/clone to the vendor/plugins folder of your Redmine installation.
 2. Enjoy
 
-Usage:
+== Usage
 
 {{google(full_link_to_your_company_doc_or_spreadsheet)}}
+
 It uses Google auth mechanism to let Redmine user view or edit content, no need to specify readonly or edit mode.
  
