@@ -10,13 +10,13 @@ Redmine::Plugin.register :redmine_googlesss do
 
   Redmine::WikiFormatting::Macros.register do
     desc = "Redmine Google Spreadsheet Macro (gs)"
-    macro :gs do |obj|
-      out = GoogleAppsMacros::SpreadsheetMacros.get_spreadsheet(obj).html_safe
+    macro :gs do |obj,args|
+      out = GoogleAppsMacros::SpreadsheetMacros.get_spreadsheet(obj,args).html_safe
     end
     
     desc = "Redmine Google Document Macro (googledoc)"
-    macro :googledoc do |obj|
-      GoogleAppsMacros::DocumentMacros.get_doc(obj).html_safe
+    macro :googledoc do |obj,args|
+      GoogleAppsMacros::DocumentMacros.get_doc(obj,args).html_safe
     end
   end
 end
