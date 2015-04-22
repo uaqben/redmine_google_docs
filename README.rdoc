@@ -3,8 +3,7 @@
 This is Google Docs Plugin - version for Google Apps for Business.
 
 Based on great work described here:
-
-For more information, see our blog post on this module: http://evolvingweb.ca/story/introducing-redmine-google-docs-plugin
+http://evolvingweb.ca/story/introducing-redmine-google-docs-plugin
 
 == Installation
 
