@@ -1,8 +1,8 @@
-= Redmine Google Docs Plugin
+= Redmine Google Docs Plugin for Business
 
-This is a plugin for Redmine that allows you to embed Google Spreadsheets and Docs into redmine pages. This is useful for keeping Google Docs-based documentation up-to-date with the issue queue. 
+This is Google Docs Plugin - version for Google Apps for Business.
 
-http://evolvingweb.ca/sites/default/files/styles/large/public/googledoc_macro_steps.png
+Based on great work described here:
 
 For more information, see our blog post on this module: http://evolvingweb.ca/story/introducing-redmine-google-docs-plugin
 
@@ -11,4 +11,8 @@ For more information, see our blog post on this module: http://evolvingweb.ca/st
 1. Extract/clone to the vendor/plugins folder of your Redmine installation.
 2. Enjoy
 
-The development of this module was sponsored by Evolving Web.
+Usage:
+
+{{google(full_link_to_your_company_doc_or_spreadsheet)}}
+It uses Google auth mechanism to let Redmine user view or edit content, no need to specify readonly or edit mode.
+ 
