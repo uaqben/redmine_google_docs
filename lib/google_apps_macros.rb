@@ -15,7 +15,7 @@ module GoogleAppsMacros
           raise "You will need two dimensions of iframe as arguments."
         else
           if !(args[1].is_a? Numeric) || !(args[2].is_a? Numeric)
-            raise "Dimensions must be integers."
+            raise "#{args[1]} #{args[2]} Dimensions must be integers."
           else
             wid = args[1]
             hei = args[2]
