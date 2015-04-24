@@ -8,8 +8,22 @@ module GoogleAppsMacros
 
   class DocumentMacros
     def self.get_doc(obj,args)
+      wid = 800
+      hei = 400
+      if args.length > 1
+        if args.length != 3
+          raise "You will need two dimensions of iframe as arguments."
+        else
+          if !(args[1].is_a? Integer) || !(args[2].is_a? Integer)
+            raise "Dimensions bust be integers."
+          else
+            wid = args[1]
+            hei = args[2]
+          end
+        end
+      end
       if args[0].start_with?("https://docs.google.com/")
-        out = "<iframe src='#{args[0]}' width='800' height='400'></iframe></br><a href='#{args[0]}' target='_blank'>Go to original Google Document</a>"
+        out = "<iframe src='#{args[0]}' width='#{wid}' height='#{hei}'></iframe></br><a href='#{args[0]}' target='_blank'>Go to original Google Document</a>"
       else
         raise "It is not Google Apps document..."
       end
