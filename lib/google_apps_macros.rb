@@ -8,7 +8,7 @@ module GoogleAppsMacros
 
   class DocumentMacros
     def self.get_doc(obj,args)
-      wid = 100%
+      wid = "100%"
       hei = 600
       if args.length > 1
         if args.length != 3
